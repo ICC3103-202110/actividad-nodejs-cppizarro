@@ -14,7 +14,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-rl.question("Elija un numero: ", numero => {
-    console.log(Fibonacci(numero))
+rl.question("Ingresa un número: ", numero => {
+    console.log("F("+numero+") =", Fibonacci(numero));
     rl.close()
 });
