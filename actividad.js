@@ -8,4 +8,13 @@ function Fibonacci(n){
     }
 }
 
-console.log(Fibonacci(6))
+const readline = require("readline");
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
+
+rl.question("Elija un numero: ", numero => {
+    console.log(Fibonacci(numero))
+    rl.close()
+});
